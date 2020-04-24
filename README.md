@@ -39,13 +39,13 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is the purpose of using _sessions_?
-
+        Allows server to hold information for the client and provides persistent data across requests.
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
-
+        Bcrypt hashes the password to improve password security
 - [ ] What does bcrypt do to slow down attackers?
-
+        Hashs the password multiple times making it harder to piece together.
 - [ ] What are the three parts of the JSON Web Token?
-
+        header, payload, signature
 ## Minimum Viable Product
 
 Implement an User Authentication System. Hash user's passwords before saving them to the database. Use `JSON Web Tokens` or `Sessions and Cookies` to persist authentication across requests.
