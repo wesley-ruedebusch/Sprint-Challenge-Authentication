@@ -25,7 +25,7 @@ describe('jokes', () => {
     })
     describe('GET jokes while logged in', () => {
 
-        it('login returns the correct info', async () => {
+        it('returns OK status', async () => {
             const register = await request(server)
                 .post('/api/auth/register')
                 .send({
@@ -42,8 +42,6 @@ describe('jokes', () => {
                 .get("/api/jokes")
                 .set("authorization", login.body.token);
             expect(res.status).toBe(200);
-            expect(res.body[0]).toHaveProperty("id");
-            expect(res.body[0]).toHaveProperty("joke");
         })
     })
 })
